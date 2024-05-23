@@ -34,7 +34,7 @@ function Navbar() {
           </Button>
           <Link to="/subscribe">
             <Button>
-              Subscribe To Newsletter
+              Subscribe
             </Button>
             </Link>
         </div>
