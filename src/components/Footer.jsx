@@ -79,7 +79,7 @@ const Footer = () => {
           <div className="flex justify-between items-center gap-4 font-cabinG text-base md:text-base">
             <div className="flex flex-col">
               <Link href="mailto:kshitijvarma21@gmail.com">Email me</Link>
-              <Link href="https://twitter.com/kstij">Twitter</Link>
+              <Link href="https://twitter.com/kstij21">Twitter</Link>
             </div>
           </div>
         </div>
