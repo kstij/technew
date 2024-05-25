@@ -1,11 +1,11 @@
 // server.js
-import express from 'express';
+const express = require('express');
 const bodyParser = require('body-parser');
 const { createClient } = require('contentful-management');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 // Contentful client setup
 const contentfulClient = createClient({
