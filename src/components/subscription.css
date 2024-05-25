@@ -1,0 +1,72 @@
+/* styles.css */
+
+/* Apply styles to placeholder text */
+.placeholder-accent::placeholder {
+  color: #0C0D0E; /* White color for placeholder text */
+  font-weight: bold;
+}
+
+/* Style the input field */
+input {
+  width: 100%; /* Make input take full width of the container */
+  padding: 12px 24px; /* Add padding for better appearance */
+  border-radius: 50px; /* Rounded corners */
+  border: 2px solid green; /* Green border */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  background-color: transparent;
+  color: #FFFFFF; /* Change text color inside the input field to white */
+  font-weight: bold; /* Make the input text bold */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input:focus {
+  outline: none; /* Lighter green border on focus */
+}
+
+/* Style the button */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px; /* Add padding */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Font weight */
+  background: linear-gradient(to bottom right, #3FD174, #3FD174); /* Button background gradient */
+  color: #ffffff; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background: linear-gradient(to bottom right, #35c466, #35c466); /* Button background gradient on hover */
+}
+
+button .icon-container {
+  position: relative;
+  overflow: hidden;
+}
+
+button .icon-container .icon {
+  transition: transform 0.3s ease; /* Smooth transition for icon */
+}
+
+button .icon-container .icon:first-child {
+  transform: translateX(0);
+}
+
+button:hover .icon-container .icon:first-child {
+  transform: translateX(5px); /* Move icon on hover */
+}
+
+button .icon-container .icon:last-child {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  transform: translateX(0);
+  transition: transform 0.3s ease; /* Smooth transition for icon */
+}
+
+button:hover .icon-container .icon:last-child {
+  transform: translateX(0); /* Move icon on hover */
+}
