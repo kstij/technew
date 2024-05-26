@@ -1,5 +1,5 @@
 // server.js
-import express from 'express';
+const express = require('express');
 const bodyParser = require('body-parser');
 const { createClient } = require('contentful-management');
 const cors = require('cors');
