@@ -70,8 +70,8 @@ const Footer = () => {
               <Link href="https://forms.gle/geNQrquQCSpDXhg16">
                 Drop a Feedback
               </Link>
-              <Link href="https://github.com/kstij/techaway">
-                Contribute on Github
+              <Link href="https://chat.whatsapp.com/DvlQu3m5VAuAn7pNLgJ9bY">
+                Join the Community
               </Link>
             </div>
           </div>
