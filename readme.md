@@ -18,7 +18,7 @@ Replace `your-username` with your GitHub username.
 Navigate to the project directory:
 
 ```bash
-cd StacksAway
+cd TechAway
 ```
 
 Install project dependencies:
