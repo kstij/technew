@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite build && node server.cjs",
-    "build": "vite build && node server.cjs & wait-on http://localhost:3000 && pkill -f 'node server.cjs'",
+    "build": "vite build && node server.cjs & PORT=3000 && until curl --silent --fail http://localhost:$PORT; do sleep 1; done && pkill -f 'node server.cjs'",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
