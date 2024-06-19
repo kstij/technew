@@ -10,6 +10,7 @@ import PlusIcon from "./components/Plusicon";
 import getContent from "./utils/getContent.jsx";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CardDetail from "./components/Card/CardDetail.jsx";
+import NewsletterSubscriptionForm from "./components/NewsletterSubscriptionForm.jsx"
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -168,7 +169,7 @@ export default function App() {
           </div>
         </div>
       </main>
-
+      <NewsletterSubscriptionForm />
       <Footer />
     </>
   );

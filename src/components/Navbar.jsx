@@ -32,11 +32,6 @@ function Navbar() {
           <Button target="_blank" href="https://forms.gle/MQHZajvzBzC1ks1r7">
             Add Program
           </Button>
-          <Link to="/subscribe">
-            <Button>
-              Subscribe
-            </Button>
-            </Link>
         </div>
       </nav>
     </div>

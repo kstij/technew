@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import { GoArrowRight } from "react-icons/go";
-import './subscription.css';
 
 function Subscribe() {
   const [email, setEmail] = useState("");
@@ -45,14 +43,17 @@ function Subscribe() {
 
   return (
     <>
-      <Navbar />
+      {/* Divider */}
+      <div className="border-b-2 border-dim-gray border-opacity-30 pb-6 ml-6 mr-6 lg:ml-10 lg:mr-10 mt-8 "></div>
+      
       <main className="font-cabinG">
         <section className="mx-auto flex flex-col items-center space-y-5 mt-20 mb-16">
-          <h2 className="text-center text-accent mx-auto font-bold text-4xl max-w-[15ch] lg:max-w-[30ch] m-2 lg:text-4xl xl:text-5xl">
-            Subscribe to 
-            <span className="text-light-gray pl-2">Our Newsletter</span>
+          <h2 className="text-center text-accent mx-auto font-bold text-4xl max-w-[15ch] lg:max-w-[30ch] m-2 lg:text-4xl xl:text-5xl ">
+            Subscribe To
+            <span className="text-light-gray pl-2">Our Newsletter </span>
           </h2>
         </section>
+
         <section className="mx-auto flex flex-col items-center space-y-5 mt-20 mb-16">
           <form onSubmit={handleSubmit} className="flex flex-col items-center mx-auto w-full max-w-md">
             <div className="w-full rounded-md px-4 py-2 mb-4">
@@ -60,8 +61,19 @@ function Subscribe() {
                 type="email"
                 value={email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder="Enter Your Email"
                 className="transparent-input"
+                style={{
+                  border: "2px solid #38a169",
+                  backgroundColor: "transparent", // Static green background color
+                  color: "white", // White text color
+                  padding: "0.75rem",
+                  borderRadius: "100px", // Rounded border
+                  fontSize: "1rem",
+                  fontWeight: "bold", // Bold text
+                  width: "100%",
+                  outline: "none", // Remove default outline
+                }}
                 required
               />
             </div>
@@ -75,21 +87,14 @@ function Subscribe() {
               <span>Subscribe</span>
               <div className="icon-container">
                 <GoArrowRight className="icon" size={18} />
-                <GoArrowRight className="icon" size={18} />
               </div>
             </button>
           </form>
           {message && <p className="text-center mt-4">{message}</p>}
         </section>
         <section className="mx-auto flex flex-col items-center space-y-5 mt-20 mb-16">
-          <h2 className="text-center text-accent mx-auto font-bold text-4xl max-w-[15ch] lg:max-w-[30ch] m-2 lg:text-4xl xl:text-5xl">
-            More Updates will be done soon
-          </h2>
           <p className="mx-auto text-lg text-center xl:text-h6 2xl:text-h5 max-w-[30ch] lg:max-w-[60ch]">
-            Soo jaao, kal subah utho, nahao, aur dekho kya naya hai!
-          </p>
-          <p className="mx-auto text-lg text-center xl:text-h6 2xl:text-h5 max-w-[30ch] lg:max-w-[60ch]">
-            -kstij
+           To get the Latest Opportunities and Updates Right into yout MailBox
           </p>
         </section>
       </main>
