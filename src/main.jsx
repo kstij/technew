@@ -1,9 +1,9 @@
 // main.jsx
-
 import React, { lazy, Suspense } from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+
 const App = lazy(() => import("./App.jsx"));
 const About = lazy(() => import("./about/About.jsx"));
 const CardDetail = lazy(() => import("./components/Card/CardDetail.jsx"));
@@ -16,7 +16,8 @@ import ReactGA from "react-ga4";
 ReactGA.initialize(process.env.GOOGLE_ID);
 ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container);
 
 root.render(
   <React.StrictMode>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { GoArrowRight } from "react-icons/go";
+import axios from "axios";
 
-function Subscribe() {
+function NewsletterSubscriptionForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -9,36 +10,41 @@ function Subscribe() {
     setEmail(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const url = "https://tech.us17.list-manage.com/subscribe/post-json?u=8c6218502446179ce14f38ad9&id=e56b780a27&c=callback";
+    const url = "https://api.brevo.com/v3/contacts";
+    const apiKey = "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";
+    const listId = 7;
 
-    const script = document.createElement('script');
-    script.src = `${url}&EMAIL=${encodeURIComponent(email)}`;
-    script.async = true;
+    try {
+      const response = await axios.post(
+        url,
+        {
+          email: email,
+          listIds: [listId],
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "api-key": apiKey,
+          },
+        }
+      );
 
-    window.callback = (data) => {
-      if (data.result === "success") {
+      console.log(response);
+
+      if (response.data.id) {
         setMessage("Thanks, you'll receive notifications now onwards.");
       } else {
-        setMessage(data.msg || "Something went wrong.");
+        setMessage("Something went wrong.");
       }
-      setEmail("");
-    };
-
-    script.onload = () => {
-      document.head.removeChild(script);
-      delete window.callback;
-    };
-
-    script.onerror = () => {
+    } catch (error) {
+      console.error(error);
       setMessage("Something went wrong.");
-      document.head.removeChild(script);
-      delete window.callback;
-    };
+    }
 
-    document.head.appendChild(script);
+    setEmail("");
   };
 
   return (
@@ -94,7 +100,7 @@ function Subscribe() {
         </section>
         <section className="mx-auto flex flex-col items-center space-y-5 mt-20 mb-16">
           <p className="mx-auto text-lg text-center xl:text-h6 2xl:text-h5 max-w-[30ch] lg:max-w-[60ch]">
-           To get the Latest Opportunities and Updates Right into yout MailBox
+           To get the Latest Opportunities and Updates Right into your MailBox
           </p>
         </section>
       </main>
@@ -102,4 +108,4 @@ function Subscribe() {
   );
 }
 
-export default Subscribe;
+export default NewsletterSubscriptionForm;
