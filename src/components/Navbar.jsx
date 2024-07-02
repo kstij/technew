@@ -1,8 +1,9 @@
+// Navbar.jsx
 import React, { useState } from "react";
 import Logosimplewhite from "./Logosimplewhite";
 import Button1 from "./Buttons1";
 import Button from "./Buttons";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import { FaBars } from "react-icons/fa";
 
 function Navbar() {
@@ -45,12 +46,14 @@ function Navbar() {
             >
               Blog
             </Link>
-            <Button1
-              href="https://forms.gle/MQHZajvzBzC1ks1r7"
-              className="text-base xl:text-h6 2xl:text-h5 font-medium text-green-400 hover:text-green-600 transition-colors duration-300"
-            >
-              Opportunity
-            </Button1>
+            <Link to="/opportunity">
+              <Button1
+                className="text-base xl:text-h6 2xl:text-h5 font-medium text-green-400 hover:text-green-600 transition-colors duration-300"
+                onClick={toggleMenu}
+              >
+                Opportunity
+              </Button1>
+            </Link>
           </div>
           <div className="hidden lg:flex items-center gap-4">
             <Button
@@ -84,13 +87,14 @@ function Navbar() {
             >
               Blog
             </Link>
-            <Button1
-              href="https://forms.gle/MQHZajvzBzC1ks1r7"
-              className="text-base xl:text-h6 2xl:text-h5 font-medium text-green-400 hover:text-green-600 transition-colors duration-300"
-              onClick={toggleMenu}
-            >
-              Opportunity
-            </Button1>
+            <Link to="/opportunity">
+              <Button1
+                className="text-base xl:text-h6 2xl:text-h5 font-medium text-green-400 hover:text-green-600 transition-colors duration-300"
+                onClick={toggleMenu}
+              >
+                Opportunity
+              </Button1>
+            </Link>
             <Button
               target="_blank"
               href="https://forms.gle/MQHZajvzBzC1ks1r7"

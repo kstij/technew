@@ -20,9 +20,7 @@ const App = () => {
         <Weare />
         <Community />
         <Endnope />
-        <OpportunityPage />
       </main>
-      <NewsletterSubscriptionForm />
       <Footer />
     </>
   );
