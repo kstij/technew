@@ -7,7 +7,6 @@ body {
 .endnope-us-section {
   background-color: #32C367;
   font-family: 'Poppins', sans-serif; /* Applying Poppins font */
-  padding-bottom: 4rem; /* Increase bottom padding for better spacing */
 }
 
 .endnope-us-border {
@@ -29,28 +28,19 @@ body {
   flex-direction: column; /* Stack text and image sections */
   align-items: center;
   padding-top: 5rem;
-  padding-bottom: 8rem; /* Adjusted bottom padding */
+  padding-bottom: 10rem;
 }
 
 @media (min-width: 768px) {
   .endnope-us-container {
-    flex-direction: row; /* Adjust to side-by-side layout */
-    justify-content: space-around; /* Space items evenly horizontally */
-    align-items: center; /* Center vertically */
-    padding-top: 7rem; /* Adjust top padding */
-    padding-bottom: 10rem; /* Adjust bottom padding */
+    flex-direction: column; /* Maintain text and image sections for desktop */
+    justify-content: center; /* Center content vertically */
   }
 }
 
-.endnope-us-image-section {
-  flex: 1; /* Take remaining space in row layout */
-  display: flex;
-  justify-content: center;
-}
-
 .endnope-us-image-box {
-  width: 18rem;
-  height: 18rem;
+  width: 18rem; /* Initial size for mobile */
+  height: 18rem; /* Initial size for mobile */
   border: 4px solid #ffffff;
   border-radius: 2rem;
   overflow: hidden;
@@ -65,18 +55,18 @@ body {
 
 @media (min-width: 768px) {
   .endnope-us-image-box {
-    width: 45rem; /* Adjusted size for larger screens */
-    height: 30rem; /* Adjusted size */
+    width: 70rem; /* Adjusted size for desktop */
+    height: 50rem; /* Adjusted size for desktop */
     margin-top: 0; /* Adjust margin for better alignment */
   }
 }
 
 .endnope-us-image-text {
-  font-size: 2.5rem; /* Adjusted font size for smaller screens */
+  font-size: 3.25rem; /* Font size for mobile */
   font-weight: bold;
   color: #ffffff; /* Text color */
   text-align: center;
-  margin-bottom: 1.5rem; /* Space between text and form */
+  margin-bottom: 1rem; /* Space between text and form */
 }
 
 .endnope-us-text-section {
@@ -88,13 +78,14 @@ body {
 
 @media (min-width: 768px) {
   .endnope-us-text-section {
-    text-align: left; /* Align text to left for larger screens */
-    margin-top: 0; /* Remove top margin */
+    text-align: center; /* Keep text centered for desktop */
+    margin-left: 0; /* Adjust margin for better alignment */
+    margin-top: 0; /* Adjust top margin */
   }
 }
 
 .endnope-us-text-main {
-  font-size: 3.25rem; /* 36px */
+  font-size: 3.25rem; /* Font size for mobile */
   font-weight: bold;
   color: #ffffff;
   line-height: 1.25;
@@ -104,7 +95,7 @@ body {
 
 @media (min-width: 768px) {
   .endnope-us-text-main {
-    font-size: 4.5rem; /* 72px */
+    font-size: 4.5rem; /* Font size for desktop */
   }
 }
 

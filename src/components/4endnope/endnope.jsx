@@ -10,7 +10,7 @@ function Endnope() {
         {/* Text Section */}
         <div className="endnope-us-text-section">
           <h2 className="endnope-us-text-main">
-            More Things are On the way !!
+            END ??
           </h2>
         </div>
 
