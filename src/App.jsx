@@ -5,9 +5,9 @@ import Footer from "./components/Footer";
 import NewsletterSubscriptionForm from "./components/NewsletterSubscriptionForm";
 import HeaderSection from "./components/HeaderSection";
 import OpportunityPage from "./components/OpportunityPage"
-import RepresentUsSection from "./components/representus/RepresentUsSection"; // Import the new section
-import Weare from "./components/WhatAreWe/weare";
-import Community from "./components/Community/community";
+import RepresentUsSection from "./components/1representus/RepresentUsSection"; // Import the new section
+import Weare from "./components/2WhatAreWe/weare";
+import Community from "./components/3Community/community";
 
 const App = () => {
   return (

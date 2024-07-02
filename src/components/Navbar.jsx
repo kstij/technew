@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="absolute top-0 z-50 w-full bg-opacity-90 backdrop-blur-sm shadow-md">
-      <div className="border-b-2 border-b-dim-gray border-opacity-30 px-4 sm:px-8 lg:px-16 font-cabinG">
+      <div className="border-b-2 border-b-dim-gray border-opacity-30 px-0 sm:px-8 lg:px-16 font-cabinG">
         <nav className="flex items-center justify-between py-2 sm:py-4 lg:py-6">
           <div className="flex items-center gap-2">
             <Logosimplewhite />
