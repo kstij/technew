@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.endnope-us-section {
+  background-color: #32C367;
+  font-family: 'Poppins', sans-serif; /* Applying Poppins font */
+}
+
+.endnope-us-border {
+  border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 1rem;
+  margin: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  .endnope-us-border {
+    margin: 0 2.5rem;
+  }
+}
+
+.endnope-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Stack text and image sections */
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+@media (min-width: 768px) {
+  .endnope-us-container {
+    flex-direction: column; /* Maintain text and image sections for desktop */
+    justify-content: center; /* Center content vertically */
+  }
+}
+
+.endnope-us-image-box {
+  width: 18rem; /* Initial size for mobile */
+  height: 18rem; /* Initial size for mobile */
+  border: 4px solid #ffffff;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  position: relative; /* Ensure position for absolute elements inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; /* Optional: Add a background color for better visibility */
+}
+
+@media (min-width: 768px) {
+  .endnope-us-image-box {
+    width: 70rem; /* Adjusted size for desktop */
+    height: 50rem; /* Adjusted size for desktop */
+    margin-top: 0; /* Adjust margin for better alignment */
+  }
+}
+
+.endnope-us-image-text {
+  font-size: 3.25rem; /* Font size for mobile */
+  font-weight: bold;
+  color: #ffffff; /* Text color */
+  text-align: center;
+  margin-bottom: 1rem; /* Space between text and form */
+}
+
+.endnope-us-text-section {
+  text-align: center; /* Center text for mobile */
+  margin-top: 1.5rem;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .endnope-us-text-section {
+    text-align: center; /* Keep text centered for desktop */
+    margin-left: 0; /* Adjust margin for better alignment */
+    margin-top: 0; /* Adjust top margin */
+  }
+}
+
+.endnope-us-text-main {
+  font-size: 3.25rem; /* Font size for mobile */
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .endnope-us-text-main {
+    font-size: 4.5rem; /* Font size for desktop */
+  }
+}
+
+.transparent-input {
+  border: 2px solid #38a169;
+  background-color: transparent; /* Static green background color */
+  color: white; /* White text color */
+  padding: 0.75rem;
+  border-radius: 100px; /* Rounded border */
+  font-size: 1rem;
+  font-weight: bold; /* Bold text */
+  width: 100%;
+  outline: none; /* Remove default outline */
+}
+
+.endnope-us-button {
+  background-color: #000000;
+  border: 4px solid #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.endnope-us-button:hover {
+  background-color: #1a1a1a;
+}

@@ -5,7 +5,7 @@ body {
 }
 
 .community-us-section {
-  background-color: #41D476;
+  background-color: #32C367;
   font-family: 'Poppins', sans-serif; /* Applying Poppins font */
 }
 
@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 12rem;
 }
 
 @media (min-width: 768px) {

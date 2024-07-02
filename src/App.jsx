@@ -8,6 +8,7 @@ import OpportunityPage from "./components/OpportunityPage"
 import RepresentUsSection from "./components/1representus/RepresentUsSection"; // Import the new section
 import Weare from "./components/2WhatAreWe/weare";
 import Community from "./components/3Community/community";
+import Endnope from "./components/4endnope/endnope";
 
 const App = () => {
   return (
@@ -18,9 +19,8 @@ const App = () => {
         <RepresentUsSection />
         <Weare />
         <Community />
-        <OpportunityPage />
+        <Endnope />
       </main>
-      <NewsletterSubscriptionForm />
       <Footer />
     </>
   );

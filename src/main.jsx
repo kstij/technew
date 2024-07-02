@@ -13,6 +13,9 @@ const SubscriptionForm = lazy(() => import("./components/NewsletterSubscriptionF
 const RepresentUsSection = lazy(() => import("./components/1representus/RepresentUsSection.jsx"));
 const Weare = lazy(() => import("./components/2WhatAreWe/weare.jsx"));
 const Community = lazy(() => import("./components/3Community/community.jsx"));
+const endnope = lazy(() => import("./components/4endnope/endnope.jsx"));
+const OpportunityPage = lazy(() => import("./components/OpportunityPage.jsx")); // Ensure correct path
+
 
 import ReactGA from "react-ga4";
 
@@ -34,6 +37,7 @@ root.render(
           <Route path="/subscribe" element={<SubscriptionForm />} />
           <Route path="/subscription-success" element={<div>Subscription successful!</div>} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/opportunity" element={<OpportunityPage />} />
         </Routes>
       </Suspense>
     </Router>
