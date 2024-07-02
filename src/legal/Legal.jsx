@@ -33,8 +33,6 @@ function Legal() {
       {/*  flex text-display text-h5 md:text-h2 max-w-[20ch] text-center text-accent mb-4 md:mb-0*/}
 
       {/* text-h6 md:text-h5 space-y-2 md:space-y-7 */}
-
-      <NavbarMemo />
       <section className="grid grid-cols-1 md:grid-cols-2 font-cabinG text-light-gray p-4 md:p-12">
         <header className="font-extrabold p-4 text-5xl text-accent space-y-2 lg:flex md:space-y-0 lg:space-x-4 2xl:pl-16">
           <Link

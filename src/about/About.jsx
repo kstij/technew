@@ -34,7 +34,6 @@ function About() {
 
       {/* text-h6 md:text-h5 space-y-2 md:space-y-7 */}
 
-      <NavbarMemo />
       <section className="grid grid-cols-1 md:grid-cols-2 font-cabinG text-light-gray p-4 md:p-12">
         <header className="font-extrabold p-4 text-5xl text-accent space-y-2 lg:flex md:space-y-0 lg:space-x-4 2xl:pl-16">
           <Link
