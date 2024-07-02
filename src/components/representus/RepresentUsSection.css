@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.represent-us-section {
+  background-color: #0C0D0E;
+  font-family: 'Poppins', sans-serif; /* Applying Poppins font */
+  padding: 2rem 1rem;
+}
+
+.represent-us-border {
+  border-bottom: 2px solid rgba(105, 105, 105, 0.3);
+  padding-bottom: 1rem;
+  margin: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  .represent-us-border {
+    margin: 0 2.5rem;
+  }
+}
+
+.represent-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .represent-us-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Added to align items vertically */
+  }
+}
+
+.represent-us-image-box {
+  width: 18rem;
+  height: 18rem;
+  border: 4px solid #38a169;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .represent-us-image-box {
+    width: 37.5rem; /* 600px */
+    height: 37.5rem; /* 600px */
+    margin-right: 2rem; /* Maintain margin */
+    margin-bottom: 0; /* Adjust margin */
+  }
+}
+
+.represent-us-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.represent-us-text-section {
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .represent-us-text-section {
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.represent-us-text-main {
+  font-size: 3.25rem; /* Adjusted size */
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .represent-us-text-main {
+    font-size: 4.5rem; /* Adjusted size */
+  }
+}
+
+.represent-us-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .represent-us-description-container {
+    align-items: flex-start; /* Adjusted for larger screens */
+  }
+}
+
+.represent-us-description,
+.represent-us-description1,
+.represent-us-description2 {
+  background-color: #000000; /* Optional: for better visibility */
+  border: 4px solid #38a169;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem; /* Adjusted padding */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .represent-us-description,
+  .represent-us-description1,
+  .represent-us-description2 {
+    font-size: 2rem;
+  }
+}

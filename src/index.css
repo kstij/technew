@@ -13,3 +13,19 @@ body{
   font-family: 'CabinetGrotesk';
   src: url('/src/components/font/CabinetGrotesk-Variable.ttf') format('truetype');
 }
+
+.custom-ml {
+  margin-left: 5.75rem; /* Equivalent to 55 in Tailwind units */
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.custom-ml {
+  margin-left: 55px;
+}
+.md\:mr-16 {
+  margin-right: 4rem; /* Adjust this as needed */
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.community-us-section {
+  background-color: #41D476;
+  font-family: 'Poppins', sans-serif; /* Applying Poppins font */
+}
+
+.community-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  padding-top: 15rem;
+  padding-bottom:15rem ;
+}
+
+@media (min-width: 768px) {
+  .community-us-container {
+    flex-direction: row-reverse; /* Reverse the order for desktop */
+    justify-content: center;
+  }
+}
+
+.community-us-image-box {
+  width: 18rem;
+  height: 18rem;
+  border: 4px solid #ffffff;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .community-us-image-box {
+    width: 30rem; /* 600px */
+    height: 20rem; /* 600px */
+    margin-right: 2rem;
+    margin-top: 0; /* Adjust margin for better alignment */
+  }
+}
+
+.community-us-text-section {
+  text-align: center; /* Center text for mobile */
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .community-us-text-section {
+    text-align: left; /* Align text to the left for desktop */
+    margin-left: 2rem; /* Adjust margin for better alignment */
+    margin-bottom: 2rem;
+  }
+}
+
+.community-us-text-main {
+  font-size: 3.25rem; /* 36px */
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .community-us-text-main {
+    font-size: 4.5rem; /* 72px */
+  }
+}
+
+.community-us-description {
+  background-color: #000000; /* Optional: for better visibility */
+  border: 4px solid #ffffff;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem; /* Adjusted padding */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  margin-top: 2rem;
+}
+
+.community-us-button {
+  background-color: #000000;
+  border: 4px solid #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 9rem;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.community-us-button:hover {
+  background-color: #1a1a1a;
+}

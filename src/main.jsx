@@ -10,6 +10,9 @@ const CardDetail = lazy(() => import("./components/Card/CardDetail.jsx"));
 const NotFound = lazy(() => import("./components/404/NotFound.jsx"));
 const Legal = lazy(() => import("./legal/Legal.jsx"));
 const SubscriptionForm = lazy(() => import("./components/NewsletterSubscriptionForm.jsx"));
+const RepresentUsSection = lazy(() => import("./components/representus/RepresentUsSection.jsx"));
+const Weare = lazy(() => import("./components/WhatAreWe/weare.jsx"));
+const Community = lazy(() => import("./components/Community/community.jsx"));
 
 import ReactGA from "react-ga4";
 
