@@ -13,6 +13,7 @@ const SubscriptionForm = lazy(() => import("./components/NewsletterSubscriptionF
 const RepresentUsSection = lazy(() => import("./components/1representus/RepresentUsSection.jsx"));
 const Weare = lazy(() => import("./components/2WhatAreWe/weare.jsx"));
 const Community = lazy(() => import("./components/3Community/community.jsx"));
+const endnope = lazy(() => import("./components/4endnope/endnope.jsx"));
 
 import ReactGA from "react-ga4";
 
