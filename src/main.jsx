@@ -1,6 +1,5 @@
-// main.jsx
 import React, { lazy, Suspense } from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 
@@ -14,13 +13,7 @@ const RepresentUsSection = lazy(() => import("./components/1representus/Represen
 const Weare = lazy(() => import("./components/2WhatAreWe/weare.jsx"));
 const Community = lazy(() => import("./components/3Community/community.jsx"));
 const endnope = lazy(() => import("./components/4endnope/endnope.jsx"));
-const OpportunityPage = lazy(() => import("./components/OpportunityPage.jsx")); // Ensure correct path
-
-
-import ReactGA from "react-ga4";
-
-ReactGA.initialize(process.env.GOOGLE_ID);
-ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+const OpportunityPage = lazy(() => import("./components/OpportunityPage.jsx"));
 
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
@@ -36,8 +29,8 @@ root.render(
           <Route path="/programs/:cardSlug" element={<CardDetail />} />
           <Route path="/subscribe" element={<SubscriptionForm />} />
           <Route path="/subscription-success" element={<div>Subscription successful!</div>} />
-          <Route path="*" element={<NotFound />} />
           <Route path="/opportunity" element={<OpportunityPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </Router>
