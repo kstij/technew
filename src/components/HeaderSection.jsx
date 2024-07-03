@@ -1,5 +1,6 @@
-// components/HeaderSection.jsx
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
+import Button1 from "./Buttons1"; // Adjust the path if necessary
 
 const HeaderSection = () => {
   return (
@@ -12,6 +13,13 @@ const HeaderSection = () => {
         Discover Mentorships, Fellowships, Hackathons, Internships and More in One Place to
         enhance your experience in tech. Updated Weekly
       </p>
+      <Link to="/opportunity">
+        <Button1
+          className="text-base xl:text-h6 2xl:text-h5 font-medium text-green-400 hover:text-green-600 transition-colors duration-300"
+        >
+          Find An Opportunity
+        </Button1>
+      </Link>
     </section>
   );
 };

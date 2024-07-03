@@ -8,7 +8,7 @@ function Weare() {
       <div className="head-img">
         <img src="/assets/x.png"/>
       </div>
-      <div className="heading">TechAways is<img src="/assets/whatarewe.png"/>.</div>
+      <div className="heading">TechAways is<img src="/assets/whatarewe.png"/>?</div>
       <div className="weare-us-container-1 we1">
         <div className="weare-us-info-1">
           <div className="weare-us-info-box">

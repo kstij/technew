@@ -46,14 +46,6 @@ function Navbar() {
             >
               Blog
             </Link>
-            <Link to="/opportunity">
-              <Button1
-                className="text-base xl:text-h6 2xl:text-h5 font-medium text-green-400 hover:text-green-600 transition-colors duration-300"
-                onClick={toggleMenu}
-              >
-                Opportunity
-              </Button1>
-            </Link>
           </div>
           <div className="hidden lg:flex items-center gap-4">
             <Button
@@ -88,12 +80,6 @@ function Navbar() {
               Blog
             </Link>
             <Link to="/opportunity">
-              <Button1
-                className="text-base xl:text-h6 2xl:text-h5 font-medium text-green-400 hover:text-green-600 transition-colors duration-300"
-                onClick={toggleMenu}
-              >
-                Opportunity
-              </Button1>
             </Link>
             <Button
               target="_blank"

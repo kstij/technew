@@ -2,6 +2,14 @@ import React from "react";
 import "./community.css";
 
 function Community() {
+  const handleJoinCommunity = () => {
+
+       const whatsappLink = `https://chat.whatsapp.com/DvlQu3m5VAuAn7pNLgJ9bY}`;
+    
+    // Open the WhatsApp link
+    window.open(whatsappLink, "_blank");
+  };
+
   return (
     <section className="community-us-section">
       <div className="community-us-container">
@@ -25,7 +33,9 @@ function Community() {
             Community
           </h2>
           <div className="community-us-description-container">
-            <button className="community-us-button">Join Our Community</button>
+            <button className="community-us-button" onClick={handleJoinCommunity}>
+              Join Our Community
+            </button>
           </div>
         </div>
       </div>
