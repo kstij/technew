@@ -23,9 +23,9 @@ function RepresentUsSection() {
             We Drop Jaws !!!
           </h2>
           <div className="represent-us-description-container">
-            <p className="represent-us-description">Host for free</p>
-            <p className="represent-us-description1">Manage for free</p>
-            <p className="represent-us-description2">1000+ Community Members</p>
+            <p className="represent-us-description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Host for free&nbsp;&nbsp;</p>
+            <p className="represent-us-description1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manage for free&nbsp;&nbsp;</p>
+            <p className="represent-us-description2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000+ Community Members&nbsp;&nbsp;</p>
           </div>
         </div>
       </div>

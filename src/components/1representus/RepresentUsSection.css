@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
+  position: relative; /* For z-index control */
 }
 
 @media (min-width: 768px) {
@@ -39,6 +40,10 @@ body {
   }
 }
 
+.represent-us-image-section {
+  z-index: 2;
+}
+
 .represent-us-image-box {
   width: 18rem;
   height: 18rem;
@@ -46,6 +51,7 @@ body {
   border-radius: 2rem;
   overflow: hidden;
   margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(56,161, 105, 1), 10px 15px 40px rgba(56, 161, 105, 1); /* Added box shadow */
 }
 
 @media (min-width: 768px) {
@@ -96,6 +102,8 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
+  margin-left: -5rem;
+  z-index: 0; /* Send the description container behind the image box */
 }
 
 @media (min-width: 768px) {
@@ -109,7 +117,7 @@ body {
 .represent-us-description2 {
   background-color: #000000; /* Optional: for better visibility */
   border: 4px solid #38a169;
-  border-radius: 1rem;
+  border-radius: 2.5rem;
   padding: 0.5rem 1rem; /* Adjusted padding */
   font-size: 1.5rem;
   font-weight: bold;
