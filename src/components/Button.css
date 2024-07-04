@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.button {
+  position: relative;
+  overflow: hidden;
+  background-size: 200% 100%;
+  z-index: 0;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  z-index: -1;
+  animation: shine 3s infinite linear;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  /* background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDE2MCAxMDAiIHZlcnNpb249IjEuMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1My4zIDE0TDEyNS41IDM3TDEzOS45IDcwTDEwMi43IDU3LjFMNzMuNzQgNzEuMkw4MS45IDEwMEw0OC44NyA4NC4xTDE0LjY3IDk2LjNMMjQuMjggNzIuNEwwIDE0TDMzLjUgMEw1My44NiAyNS41TDY5Ljg5IDBMMTA1LjEgMTEuN0wxMjEuMyAwTDE1My4zIDE0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==') repeat-x; */
+  z-index: -2;
+  animation: moveShapes 5s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes moveShapes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 160px 0;
+  }
+}
+
+.group:hover .button::before {
+  animation: shine 1.5s infinite linear;
+}
+
+.group:hover .button::after {
+  animation: moveShapes 2.5s infinite linear;
+}
