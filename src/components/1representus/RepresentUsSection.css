@@ -8,6 +8,7 @@ body {
   background-color: #0C0D0E;
   font-family: 'Poppins', sans-serif; /* Applying Poppins font */
   padding: 2rem 1rem;
+  overflow-x: hidden;
 }
 
 .represent-us-border {
@@ -51,7 +52,13 @@ body {
   border-radius: 2rem;
   overflow: hidden;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(56,161, 105, 1), 10px 15px 40px rgba(56, 161, 105, 1); /* Added box shadow */
+  box-shadow: 0 4px 8px rgba(56,161, 105, 1), 10px 15px 40px rgba(56, 161, 105, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.represent-us-image-box:hover {
+  transform: scale(1.05); /* Grow image on hover */
+  box-shadow: 0 4px 8px rgba(56,161, 105, 0);
 }
 
 @media (min-width: 768px) {
@@ -88,7 +95,21 @@ body {
   font-weight: bold;
   color: #ffffff;
   line-height: 1.25;
+  width: 40rem;
+  height: 10rem;
   margin-top: 1rem;
+}
+.represent-us-text-main span{
+  justify-content: center;
+}
+
+.jello {
+  display: inline-block; /* Ensure the element is inline-block */
+  transition: transform 0.3s ease; 
+}
+.jello:hover {
+  transform: translateY(-10px); /* Move upwards on hover */
+  color: #38a169;
 }
 
 @media (min-width: 768px) {
@@ -97,18 +118,38 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .represent-us-text-main span{
+   justify-content: center;
+   font-size: 2.25rem; 
+   align-items: center;/* Adjusted size */
+  } 
+  .represent-us-text-main{
+    margin-left:-9rem;
+    margin-bottom:-8rem;
+  }
+}
+
 .represent-us-description-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
-  margin-left: -5rem;
+  margin-left: -3.75rem;
   z-index: 0; /* Send the description container behind the image box */
 }
 
-@media (min-width: 768px) {
+@media (max-width: 3000px) {
   .represent-us-description-container {
     align-items: flex-start; /* Adjusted for larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .represent-us-description-container {
+    align-items: center; /* Adjusted for larger screens */
+    margin-left: 0.5rem;
+    transform: scale(0.75);
   }
 }
 
@@ -125,7 +166,14 @@ body {
   text-align: center;
   white-space: nowrap; /* Prevent text from wrapping */
   margin-top: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
+
+.represent-us-description:hover,
+.represent-us-description1:hover,
+.represent-us-description2:hover {
+  transform: scale(1.05);
+} 
 
 @media (min-width: 768px) {
   .represent-us-description,
