@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-body {
-  overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
 .community-us-section {
   background-color: #32C367;
   font-family: 'Poppins', sans-serif; /* Applying Poppins font */
@@ -90,6 +86,9 @@ body {
 }
 
 .community-us-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
   background-color: #000000;
   border: 4px solid #ffffff;
   border-radius: 0.5rem;
@@ -101,6 +100,159 @@ body {
   margin-top: 1rem;
 }
 
+.community-us-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  z-index: -1;
+  animation: shine 3s infinite linear;
+}
+
+.community-us-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  z-index: -2;
+  animation: moveShapes 5s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes moveShapes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 160px 0;
+  }
+}
+
+.community-us-button:hover::before {
+  animation: shine 1.5s infinite linear;
+}
+
+.community-us-button:hover::after {
+  animation: moveShapes 2.5s infinite linear;
+}
+
+@media (min-width: 768px) {
+  .community-us-container {
+    flex-direction: row-reverse; /* Reverse the order for desktop */
+    justify-content: space-between; /* Added to maintain spacing */
+    align-items: center; /* Vertically center align */
+  }
+}
+
+.community-us-image-box {
+  width: 18rem;
+  height: 18rem;
+  border: 4px solid #ffffff;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .community-us-image-box {
+    width: 30rem; /* Adjusted size */
+    height: 20rem; /* Adjusted size */
+    margin-top: 0; /* Adjust margin for better alignment */
+  }
+}
+
+.community-us-text-section {
+  text-align: center; /* Center text for mobile */
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .community-us-text-section {
+    text-align: left; /* Align text to the left for desktop */
+    margin-left: 2rem; /* Adjust margin for better alignment */
+    margin-top: 0; /* Adjust top margin */
+  }
+}
+
+.community-us-text-main {
+  font-size: 3.25rem; /* 36px */
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .community-us-text-main {
+    font-size: 4.5rem; /* 72px */
+  }
+}
+
+.community-us-description-container {
+  margin-top: 1rem;
+}
+
+.community-us-description {
+  background-color: #000000; /* Optional: for better visibility */
+  border: 4px solid #ffffff;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem; /* Adjusted padding */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  margin-top: 2rem;
+}
+
+.community-us-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #000000;
+  border: 4px solid #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
 .community-us-button:hover {
   background-color: #1a1a1a;
+}
+
+.button-arrow {
+  margin-left: 0.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.community-us-button:hover .button-arrow {
+  transform: translateX(5px);
 }
