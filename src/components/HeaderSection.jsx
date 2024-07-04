@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
-import Button1 from "./Buttons1"; // Adjust the path if necessary
+import { Link } from "react-router-dom";
+import Button1 from "./Buttons1";
 
 const HeaderSection = () => {
   return (
